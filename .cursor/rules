@@ -1,0 +1,15 @@
+# Project Identity
+This is Project Chimera.
+An autonomous influencer system.
+
+# PRIME DIRECTIVE
+Never generate or modify code without consulting specs/.
+
+# SPEC-FIRST ENFORCEMENT
+Always follow instructions in specs/ before coding.
+
+# PLAN BEFORE CODING
+Always explain the plan before writing code.
+
+# TRACEABILITY
+Document decisions and link code changes to specs/.
