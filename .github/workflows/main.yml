@@ -1,0 +1,24 @@
+name: Project Chimera CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t project-chimera .
+
+      - name: Run tests
+        run: docker run --rm project-chimera
+
+      - name: Spec check
+        run: make spec-check

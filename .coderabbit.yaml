@@ -1,0 +1,13 @@
+review:
+  rules:
+    - name: Spec Alignment
+      description: All code changes must align with specs/
+      severity: error
+
+    - name: No Undocumented Changes
+      description: Any logic change must be documented
+      severity: error
+
+    - name: Security Review
+      description: Flag unsafe patterns or unchecked inputs
+      severity: warning
